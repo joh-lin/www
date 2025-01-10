@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div.window {
+        transform: rotate(-90deg);
+      }
+    </style>
+    <script>
+      window.addEventListener("load", (event) => {
+        let clockEl = document.getElementById("clock");
+        clockEl.textContent = "Yes, its enabled";
+      });
+    </script>
+  </head>
+  <body>
+    <div class="window">
+      <h1>Is JS enabled?</h1>
+      <div id="clock">NO, its not enabled</div>
+    </div>
+  </body>
+</html>
