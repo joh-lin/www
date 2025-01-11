@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      div#clock {
-        font-size: 5rem;
-      }
-    </style>
-    
-  </head>
-  <body>
-    <div class="window">
-      <button id="clock" onclick="log_somethin()">0000</button>
-      <div id="logger">LOGGER</div>
-    </div>
-    <script>
-      document.addEventListener("DOMContentLoaded", (event) => {
-        let clockEl = document.getElementById("clock");
-        clockEl.innerHTML = "JS IS WORKING"
-      });
+<head>
+</head>
+<body>
 
-      function log_somethin() {
-        document.getElementById("logger").innerHTML = "1234"
-      }
-    </script>
-  </body>
+<h2>This is example text</h2>
+
+<button onclick="openFullscreen();">Open Fullscreen</button>
+<button onclick="closeFullscreen();">Close Fullscreen</button>
+
+<script>
+var elem = document.documentElement;
+function openFullscreen() {
+  elem.innerHTML = "DELETED"
+}
+
+function closeFullscreen() {
+}
+</script>
+
+<p>Note: Internet Explorer 10 and earlier versions do not support the msRequestFullscreen() method.</p>
+
+</body>
 </html>
