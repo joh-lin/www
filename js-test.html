@@ -2,18 +2,26 @@
 <html>
   <head>
     <style>
+      div#clock {
+        font-size: 5rem;
+      }
     </style>
-    <script>
-      window.addEventListener("load", (event) => {
-        let clockEl = document.getElementById("clock");
-        clockEl.textContent = "Yes, its enabled";
-      });
-    </script>
+    
   </head>
   <body>
     <div class="window">
-      <h1>Is JS enabled?</h1>
-      <div id="clock">NO, its not enabled</div>
+      <button id="clock" onclick="log_somethin()">0000</button>
+      <div id="logger">LOGGER</div>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        let clockEl = document.getElementById("clock");
+        clockEl.innerHTML = "JS IS WORKING"
+      });
+
+      function log_somethin() {
+        document.getElementById("logger").innerHTML = "1234"
+      }
+    </script>
   </body>
 </html>
